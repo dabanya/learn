@@ -1,6 +1,6 @@
 # learn
 
-System.out.println("欢迎光临~\n请按照以下提示进行操作!\n查询请输入1   插入请输入2  修改请输入3   删除请输入4   清空请输入5   退出请输入0");
+		System.out.println("欢迎光临~\n请按照以下提示进行操作!\n查询请输入1   插入请输入2  修改请输入3   删除请输入4   清空请输入5   退出请输入0");
 		
 		Scanner insert = new Scanner(System.in);
 		int in = insert.nextInt();
