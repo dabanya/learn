@@ -4,60 +4,60 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test01 {
-
+	
+	static Scanner insert = new Scanner(System.in);
+	static int in = insert.nextInt();
 
 	public static void main(String[] args) {
 		
-		System.out.println("»¶Ó­¹âÁÙ~\nÇë°´ÕÕÒÔÏÂÌáÊ¾½øĞĞ²Ù×÷!\n²éÑ¯ÇëÊäÈë1 ²åÈëÇëÊäÈë2 ĞŞ¸ÄÇëÊäÈë3 É¾³ıÇëÊäÈë4 Çå¿ÕÇëÊäÈë5 ÍË³öÇëÊäÈë0");
-		
-		Scanner insert = new Scanner(System.in);
-		int in = insert.nextInt();
-		
+		System.out.println("æ¬¢è¿å…‰ä¸´~\nè¯·æŒ‰ç…§ä»¥ä¸‹æç¤ºè¿›è¡Œæ“ä½œ!\næŸ¥è¯¢è¯·è¾“å…¥1 æ’å…¥è¯·è¾“å…¥2 ä¿®æ”¹è¯·è¾“å…¥3 åˆ é™¤è¯·è¾“å…¥4 æ¸…ç©ºè¯·è¾“å…¥5 é€€å‡ºè¯·è¾“å…¥0");
+				
 		while (in != 0) {
 			
-			System.out.println("²éÑ¯ÇëÊäÈë1   ²åÈëÇëÊäÈë2  ĞŞ¸ÄÇëÊäÈë3   É¾³ıÇëÊäÈë4   Çå¿ÕÇëÊäÈë5   ÍË³öÇëÊäÈë0");
+			System.out.println("æŸ¥è¯¢è¯·è¾“å…¥1   æ’å…¥è¯·è¾“å…¥2  ä¿®æ”¹è¯·è¾“å…¥3   åˆ é™¤è¯·è¾“å…¥4   æ¸…ç©ºè¯·è¾“å…¥5   é€€å‡ºè¯·è¾“å…¥0");
 			
-			Scanner sc = new Scanner(System.in);
-			String nu = sc.next();	
-//			ArrayList list = new ArrayList(); 
-			ArrayList list = new ArrayList(); list.add("anan"); list.add("°²°²");
+//			Scanner sc = new Scanner(System.in);
+//			String nu = sc.next();	
 
-			if ("1".equals(nu)) {
+			ArrayList list = new ArrayList(); 
+			list.add("anan"); list.add("å®‰å®‰");
+
+			if ("1".equals(in)) {
 				
 					for (int i = 0; i < list.size(); i++) {
 					String result = (String)list.get(i);
 					System.out.println(result +"   "+ i);				
 				}
 				
-			} else if ("2".equals(nu)) {
+			} else if ("2".equals(in)) {
 				
 				Scanner add = new Scanner(System.in);
-				System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+				System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 				String name = add.next();
 
 				list.add(name);				
 
-			}else if ("3".equals(nu)) {
+			}else if ("3".equals(in)) {
 				
 				Scanner set = new Scanner(System.in);
-				System.out.println("ÇëÊäÈëÒªĞŞ¸ÄµÄÓÃ»§ÃûID£º");
+				System.out.println("è¯·è¾“å…¥è¦ä¿®æ”¹çš„ç”¨æˆ·åIDï¼š");
 				int setID = set.nextInt();
-				System.out.println("ÇëÊäÈëĞÂµÄÓÃ»§Ãû£º");
+				System.out.println("è¯·è¾“å…¥æ–°çš„ç”¨æˆ·åï¼š");
 				String newname = set.next();
 				
 				list.set(setID, newname);
 				
 				
-			}else if ("4".equals(nu)) {
+			}else if ("4".equals(in)) {
 				
 				Scanner del = new Scanner(System.in);
-				System.out.println("ÇëÊäÈëÒªÉ¾³ıµÄÓÃ»§ÃûID£º");
+				System.out.println("è¯·è¾“å…¥è¦åˆ é™¤çš„ç”¨æˆ·åIDï¼š");
 				String delID = del.next();
 				
 				list.remove(delID);
 				
 				
-			}else if ("5".equals(nu)) {
+			}else if ("5".equals(in)) {
 				
 				list.clear();
 				System.out.println("Clear successful~");
@@ -70,5 +70,6 @@ public class Test01 {
 	
 
 	}
+	
 
 }
